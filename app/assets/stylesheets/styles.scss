@@ -1,0 +1,47 @@
+
+body{
+	background: #f4f6f5;
+}
+.navbar-brand img{
+	max-width: 100px;
+	margin-top: -7px;
+}
+.navbar-default{
+	background-color: #0c77b7;
+	padding: 20px 170px 0px 170px;
+}
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+ .icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: -30px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+.collapse .form-group{
+	margin-bottom: 0px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 4px;
+    border-radius: 1px;
+}
+.navbar-nav .glyphicon{
+	font-size: 20px;
+}
+.appointment .col-sm-3 .panel-body{
+	min-height: 200px;
+}
