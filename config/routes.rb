@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'doctor/index'
+  get 'doctor/profile'
+  get 'doctor/license'
+  get 'doctor/final'
+  get 'doctor/address'
+
   get 'patient/index'
   get 'patient/personinfo'
   get 'patient/address'
