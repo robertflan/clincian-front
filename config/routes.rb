@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'clinic/index'
+
+  get 'clinician/index'
+  get 'clinician/profile'
+  get 'clinician/license'
+  get 'clinician/final'
+  get 'clinician/address'
+  get 'clinician/info'
+
   get 'doctor/index'
   get 'doctor/profile'
   get 'doctor/license'
