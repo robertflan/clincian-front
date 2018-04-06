@@ -1,0 +1,27 @@
+<%= render 'patient/patient_header' %>
+<h1>Patient info</h1>
+<form class="form-inline">
+  <div class="form-row row">
+    <label for="uli" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Primiary ULI</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control form-control-sm block" id="uli" placeholder="">
+    </div>
+  </div>
+  <div class="form-row row">
+    <label for="insurer" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Default Insurer</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control form-control-sm" id="insurer" placeholder="">
+    </div>
+  </div>
+  <div class="form-row row">
+    <label for="family" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Family Physician</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control form-control-sm" id="family" placeholder="">
+    </div>
+  </div>
+</form>
+	<div class="row text-center">
+	  <button type="button" class="btn btn-primary btn-lg">cancel</button>
+	  <button type="button" class="btn btn-primary btn-lg next-btn"><%= link_to 'Next', patient_personinfo_path %></button>
+	</div>
+<%= render 'patient/patient_footer' %>
