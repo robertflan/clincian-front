@@ -68,7 +68,7 @@ body{
 	background: #fff;
 	padding: 10px 20px;
 }
-.appointment_command button{
+.appointment_command .btn{
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
@@ -81,17 +81,31 @@ body{
 .dropdown-menu{
 	padding: 10px;
 }
-.personal_info{
-	padding: 15px 30px;
+.panel-body{
+	padding: 15px 30px !important;
 }
 .person_info .form-row{
 	padding: 10px 0px;
+}
+.person_info .form-row label{
+	float: left;
+}
+.person_info .form-row input{
+	float: right;
 }
 .appointment_command a{
 	color: #fff;
 }
 .next-btn a{
 	color: #fff;
+}
+.profile_pic{
+	width: 150px;
+	height: 150px;
+	border: 1px solid #7777;
+	margin: 30px auto;
+	font-size: 100px;
+	padding-top: 20px;
 }
 
 @media only screen and ( min-width:600px) and ( max-width:767px ){
