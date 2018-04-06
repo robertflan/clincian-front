@@ -22,6 +22,6 @@
 </form>
 	<div class="row text-center">
 	  <button type="button" class="btn btn-primary btn-lg">cancel</button>
-	  <button type="button" class="btn btn-primary btn-lg next-btn"><%= link_to 'Next', patient_final_path %></button>
+	  <%= link_to 'Next', patient_profile_path, class: "btn btn-primary btn-lg next-btn" %>
 	</div>
 <%= render 'patient/patient_footer' %>

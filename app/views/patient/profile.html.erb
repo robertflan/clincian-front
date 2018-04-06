@@ -7,6 +7,6 @@
 </div>
 	<div class="row text-center">
 	  <button type="button" class="btn btn-primary btn-lg">cancel</button>
-	  <button type="button" class="btn btn-primary btn-lg next-btn"><%= link_to 'Next', patient_personinfo_path %></button>
+	  <%= link_to 'Next', patient_final_path, class: "btn btn-primary btn-lg next-btn" %>
 	</div>
 <%= render 'patient/patient_footer' %>
