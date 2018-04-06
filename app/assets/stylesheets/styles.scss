@@ -1,14 +1,19 @@
 
+@import url('https://fonts.google.com/specimen/Lato?selection.family=Lato');
 body{
 	background: #f4f6f5;
+	font-family: 'Lato';
+}
+.navbar-brand{
+    margin-left: 100px;
 }
 .navbar-brand img{
-	max-width: 100px;
-	margin-top: -7px;
+	max-width: 200px;
+	margin-top: -33px;
 }
 .navbar-default{
 	background-color: #0c77b7;
-	padding: 20px 170px 0px 170px;
+	padding-top: 30px;
 }
 .icon-addon {
     position: relative;
@@ -44,4 +49,24 @@ body{
 }
 .appointment .col-sm-3 .panel-body{
 	min-height: 200px;
+}
+.navbar-default .custom-toggle .icon-bar {
+    background-color: #888;
+}
+.custom-toggle{
+	background-color: #0c77b7;
+	border: none;
+}
+.custom-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 4px;
+    border-radius: 1px;
+    margin-top: 4px;
+}
+.dropdown-toggle{
+	padding: 0px !important;
+}
+.user_name{
+	margin-left: 10px;
 }
