@@ -4,39 +4,49 @@
 			<div class="col-sm-3">
 				<div class="panel panel-default">
 				  <div class="panel-body">
-				   <h2>completed Appointment</h2>
+				   <h2 class="text-center">completed Appointment</h2>
 				  </div>
 				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="panel panel-default">
 				  <div class="panel-body">
-					<h2>Missed Appointment</h2>
+					<h2 class="text-center">Missed Appointment</h2>
 				  </div>
 				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="panel panel-default">
 				  <div class="panel-body">
-					<h2>Patients</h2>
+					<h2 class="text-center">Patients</h2>
 				  </div>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<button type="button" class="btn btn-primary btn-lg btn-block">Add patiend</button>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Doctor</button>
+			<div class="col-sm-3 appointment_command">
+				<button type="button" class="btn btn-primary btn-lg btn-block"><%= link_to 'Add patient', home_personal_path %></button>
+				<button type="button" class="btn btn-primary btn-lg btn-block">Add Doctor</button>
 				<button type="button" class="btn btn-primary btn-lg btn-block">Add Clinician</button>
 			</div>
 		</div>
 	</section>
 	<section id="date_picker">
 		<div class="row">
+			<div class="text-center col-md-2 col-md-offset-5">
+				<div class='input-group date' id='datetimepicker1'>
+	                    <input type='text' class="form-control" />
+	                    <span class="input-group-addon">
+	                        <span class="glyphicon glyphicon-calendar"></span>
+	                    </span>
+	            </div>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-sm-4">
-				<h4>Dr 1</h4>
+				<h4 class="text-center">Doctor 1</h4>
 				<div style="overflow:hidden;">
 				    <div class="form-group">
 				        <div class="row">
-				            <div class="col-md-8">
+				            <div class="col-md-12 main_calendar">
 				                <div id="datetimepicker12"></div>
 				            </div>
 				        </div>
@@ -52,11 +62,11 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<h4>Dr 1</h4>
+				<h4 class="text-center">Doctor 2</h4>
 				<div style="overflow:hidden;">
 				    <div class="form-group">
 				        <div class="row">
-				            <div class="col-md-8">
+				            <div class="col-md-12 main_calendar">
 				                <div id="datetimepicker13"></div>
 				            </div>
 				        </div>
@@ -72,11 +82,11 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<h4>Dr 1</h4>
+				<h4 class="text-center">Doctor 3</h4>
 				<div style="overflow:hidden;">
 				    <div class="form-group">
 				        <div class="row">
-				            <div class="col-md-8">
+				            <div class="col-md-12 main_calendar">
 				                <div id="datetimepicker14"></div>
 				            </div>
 				        </div>
@@ -93,4 +103,71 @@
 			</div>
 		</div>
 	</section>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body person_info">
+		   <form class="form-inline">
+		   		<h1>Personal info</h1>
+				  	<div class="form-row row">
+					    <div class="form-group col-md-6">
+					      <label for="inputfirstname">First Name</label>
+					      <input type="text" class="form-control" id="iinputfirstname" placeholder="">
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label for="inputphonenumber">Phone Number</label>
+					      <input type="text" class="form-control" id="inputphonenumber" placeholder="">
+					    </div>
+				  	</div>
+				 	 <div class="form-row row">
+					  <div class="form-group col-md-6">
+					    <label for="inputlastname">Last Name</label>
+					    <input type="text" class="form-control" id="inputlastname" placeholder="">
+					  </div>
+					  <div class="form-group col-md-6">
+					    <label for="inputcellnumber">Cell Number</label>
+					    <input type="text" class="form-control" id="cellnumber" placeholder="">
+					  </div>
+				  	</div>
+				  	<div class="form-row row">
+					    <div class="form-group col-md-6">
+					      <label for="gender">Gender</label>
+					      <select id="gender" class="form-control">
+					        <option selected>Male</option>
+					        <option>Female</option>
+					      </select>
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label for="inputState">Status</label>
+					      <select id="inputState" class="form-control">
+					        <option selected>Active</option>
+					        <option>Disable</option>
+					      </select>
+					    </div>
+				  	</div>
+				  	<div class="form-row row">
+					    <div class="form-group col-md-6">
+					      <label for="inputbirthday">Birthday</label>
+					      <input type="text" class="form-control" id="inputbirthday" placeholder="">
+					    </div>
+				  	</div>
+				  	<div class="row">
+					  <button type="button" class="btn btn-primary">cancel</button>
+					  <button type="button" class="btn btn-primary">Next</button>
+				  	</div>
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>

@@ -38,12 +38,6 @@ body{
 .collapse .form-group{
 	margin-bottom: 0px;
 }
-.navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 4px;
-    border-radius: 1px;
-}
 .navbar-nav .glyphicon{
 	font-size: 20px;
 }
@@ -59,14 +53,65 @@ body{
 }
 .custom-toggle .icon-bar {
     display: block;
-    width: 22px;
+    width: 37px;
     height: 4px;
-    border-radius: 1px;
-    margin-top: 4px;
+    border-radius: 4px;
+    margin-top: 7px;
 }
 .dropdown-toggle{
 	padding: 0px !important;
 }
 .user_name{
 	margin-left: 10px;
+}
+.main_calendar{
+	background: #fff;
+	padding: 10px 20px;
+}
+.appointment_command button{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#appointment_panel{
+	margin-top: 50px;
+}
+#date_picker{
+	margin-top: 50px;
+}
+.dropdown-menu{
+	padding: 10px;
+}
+.person_info .form-row{
+	padding: 10px 0px;
+}
+.appointment_command a{
+	color: #fff;
+}
+
+
+@media only screen and ( min-width:600px) and ( max-width:767px ){
+	
+}
+
+
+
+@media only screen and ( min-width:768px) and ( max-width:960px ){
+	
+}
+
+@media only screen and ( min-width: 320px) and ( max-width: 599px ){
+	
+}
+
+@media only screen and (max-width: 768px){
+	.navbar-brand{
+    margin-left: 0px;
+	}
+	.dropdown-menu .text-center{
+		text-align: left;
+	}
+ 	header .navbar-nav{
+ 		padding-left: 20px;
+ 	}
+	
 }
