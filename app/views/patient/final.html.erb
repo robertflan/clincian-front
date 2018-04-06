@@ -45,7 +45,7 @@
 		<div class="panel panel-default" >
 		  	<div class="panel-body person_info" id="total_body">
 				<div id="accordion">
-				  <div class="card">
+				  <div class="card person_card_info">
 				    <div class="card-header" id="headingOne">
 				    	<div class="row">
 				    		<div class="col-sm-9">
@@ -55,16 +55,14 @@
 						      <p>High Level Demographic Information</p>
 						  	</div>
 				    		<div class="col-sm-3">
-							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					          Expand
-					        </button>
+							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Expand</button>
 				    		</div>
 				    	</div>
 				    </div>
 
 				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 				      <div class="card-body">
-				        <form class="f">
+				        <form class="person_form">
 						  	<div class="form-row row">
 							    <div class="form-group col-lg-6">
 							      <label for="inputfirstname">First Name</label>
@@ -115,7 +113,7 @@
 				      </div>
 				    </div>
 				  </div>
-				  <div class="card">
+				  <div class="card person_card_info">
 				    <div class="card-header" id="headingTwo">
 				      <div class="row">
 				    		<div class="col-sm-9">
@@ -125,9 +123,7 @@
 						      <p>Patients Medical Information</p>
 						  	</div>
 				    		<div class="col-sm-3">
-							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					          Expand
-					        </button>
+							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Expand</button>
 				    		</div>
 				    	</div>
 				    </div>
@@ -159,7 +155,7 @@
 				      </div>
 				    </div>
 				  </div>
-				  <div class="card">
+				  <div class="card person_card_info">
 				    <div class="card-header" id="headingThree">
 				      <div class="row">
 				    		<div class="col-sm-9">
@@ -169,9 +165,7 @@
 						      <p>Edit Patients Address</p>
 						  	</div>
 				    		<div class="col-sm-3">
-							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					          Expand
-					        </button>
+							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Expand</button>
 				    		</div>
 				    	</div>
 				    </div>
@@ -227,56 +221,62 @@
 						      <p>View Historical Appointment Details</p>
 						  	</div>
 				    		<div class="col-sm-3">
-							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-					          Run Report
-					        </button>
+							   <button class="btn btn-primary collapsed btn-block report_btn" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Run Report</button>
 				    		</div>
 				    	</div>
 				    </div>
 				    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 				      <div class="card-body">
-				      <table class="table">
-					    <thead>
-					      <tr>
-					        <th>Patient</th>
-					        <th>Doctor</th>
-					        <th>Clinic</th>
-					        <th>Date</th>
-					        <th>Start Time</th>
-					        <th>End Time</th>
-					        <th>Notes</th>
-					      </tr>
-					    </thead>
-					    <tbody>
-					      <tr>
-					        <td>John Example</td>
-					        <td>Doctor 1</td>
-					        <td>Clinic 1</td>
-					        <td>15-Mar-2018</td>
-					        <td>14:00:00</td>
-					        <td>14:15:36</td>
-					        <td>SOAP Notes</td>
-					      </tr>
-					      <tr>
-					        <td>John Example</td>
-					        <td>Doctor 1</td>
-					        <td>Clinic 1</td>
-					        <td>15-Mar-2018</td>
-					        <td>14:00:00</td>
-					        <td>14:15:36</td>
-					        <td>SOAP Notes</td>
-					      </tr>
-					      <tr>
-					        <td>John Example</td>
-					        <td>Doctor 1</td>
-					        <td>Clinic 1</td>
-					        <td>15-Mar-2018</td>
-					        <td>14:00:00</td>
-					        <td>14:15:36</td>
-					        <td>SOAP Notes</td>
-					      </tr>
-					    </tbody>
-					  </table>
+					      <table class="table">
+						    <thead>
+						      <tr>
+						        <th>Patient</th>
+						        <th>Doctor</th>
+						        <th>Clinic</th>
+						        <th>Date</th>
+						        <th>Start Time</th>
+						        <th>End Time</th>
+						        <th>Notes</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>John Example</td>
+						        <td>Doctor 1</td>
+						        <td>Clinic 1</td>
+						        <td>15-Mar-2018</td>
+						        <td>14:00:00</td>
+						        <td>14:15:36</td>
+						        <td>SOAP Notes</td>
+						      </tr>
+						      <tr>
+						        <td>John Example</td>
+						        <td>Doctor 1</td>
+						        <td>Clinic 1</td>
+						        <td>15-Mar-2018</td>
+						        <td>14:00:00</td>
+						        <td>14:15:36</td>
+						        <td>SOAP Notes</td>
+						      </tr>
+						      <tr>
+						        <td>John Example</td>
+						        <td>Doctor 1</td>
+						        <td>Clinic 1</td>
+						        <td>15-Mar-2018</td>
+						        <td>14:00:00</td>
+						        <td>14:15:36</td>
+						        <td>SOAP Notes</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						  <div class="row">
+							  	<div class="col-sm-3 col-sm-offset-3">
+							  		<button class="btn btn-primary btn-block">Download</button>
+							  	</div>
+							  	<div class="col-sm-3">
+							  		<button class="btn-block btn btn-primary report_close" data-toggle="collapse" data-target="#collapseFour">Close</button>
+							  	</div>
+						  </div>
 				      </div>
 				    </div>
 				  </div>
