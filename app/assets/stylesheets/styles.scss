@@ -107,7 +107,9 @@ body{
 	font-size: 100px;
 	padding-top: 20px;
 }
-
+.final_dashboard .panel-body{
+	min-height: 150px;
+}
 @media only screen and ( min-width:600px) and ( max-width:767px ){
 	
 }
