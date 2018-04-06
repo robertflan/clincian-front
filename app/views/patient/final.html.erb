@@ -3,13 +3,23 @@
 		<div class="col-sm-2 col-sm-offset-1">
 			<div class="panel panel-default">
 			  <div class="panel-body">
-			   <h4 class="text-center">completed Appointment</h4>
+			  	<p class="text-center"><span class="glyphicon glyphicon-user" style="font-size: 50px"></span></p>
+			   <h4 class="text-center">Jane Example</h4>
 			  </div>
 			</div>
 		</div>
 		<div class="col-sm-2">
 			<div class="panel panel-default">
 			  <div class="panel-body">
+			  	<p class="text-center"><span class="glyphicon glyphicon-user" style="font-size: 50px"></span></p>
+				<h4 class="text-center">Completed Appointment</h4>
+			  </div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="panel panel-default">
+			  <div class="panel-body">
+			  	<p class="text-center"><span class="glyphicon glyphicon-user" style="font-size: 50px"></span></p>
 				<h4 class="text-center">Missed Appointment</h4>
 			  </div>
 			</div>
@@ -17,70 +27,261 @@
 		<div class="col-sm-2">
 			<div class="panel panel-default">
 			  <div class="panel-body">
-				<h4 class="text-center">Patients</h4>
+			  	<p class="text-center"><span class="glyphicon glyphicon-user" style="font-size: 50px"></span></p>
+				<h4 class="text-center">Next Appointment</h4>
 			  </div>
 			</div>
 		</div>
 		<div class="col-sm-2">
 			<div class="panel panel-default">
 			  <div class="panel-body">
-				<h4 class="text-center">Patients</h4>
-			  </div>
-			</div>
-		</div>
-		<div class="col-sm-2">
-			<div class="panel panel-default">
-			  <div class="panel-body">
-				<h4 class="text-center">Patients</h4>
+			  	<p class="text-center"><span class="glyphicon glyphicon-user" style="font-size: 50px"></span></p>
+				<h4 class="text-center">Missed %</h4>
 			  </div>
 			</div>
 		</div>
 	</div>
-	<%= render 'patient/patient_header' %>
-		<div id="accordion">
-		  <div class="card">
-		    <div class="card-header" id="headingOne">
-		      <h5 class="mb-0">
-		        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-		          Collapsible Group Item #1
-		        </button>
-		      </h5>
-		    </div>
+	<div class="col-sm-10 col-sm-offset-1">
+		<div class="panel panel-default" >
+		  	<div class="panel-body person_info" id="total_body">
+				<div id="accordion">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				    	<div class="row">
+				    		<div class="col-sm-9">
+						      <h3 class="mb-0">
+						          Personal Info
+						      </h3>
+						      <p>High Level Demographic Information</p>
+						  	</div>
+				    		<div class="col-sm-3">
+							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					          Expand
+					        </button>
+				    		</div>
+				    	</div>
+				    </div>
 
-		    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-		      <div class="card-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-		      </div>
-		    </div>
-		  </div>
-		  <div class="card">
-		    <div class="card-header" id="headingTwo">
-		      <h5 class="mb-0">
-		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		          Collapsible Group Item #2
-		        </button>
-		      </h5>
-		    </div>
-		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-		      <div class="card-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-		      </div>
-		    </div>
-		  </div>
-		  <div class="card">
-		    <div class="card-header" id="headingThree">
-		      <h5 class="mb-0">
-		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-		          Collapsible Group Item #3
-		        </button>
-		      </h5>
-		    </div>
-		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-		      <div class="card-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-		      </div>
-		    </div>
-		  </div>
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				      <div class="card-body">
+				        <form class="f">
+						  	<div class="form-row row">
+							    <div class="form-group col-lg-6">
+							      <label for="inputfirstname">First Name</label>
+							      <input type="text" class="form-control form-control-lg" id="iinputfirstname" placeholder="">
+							    </div>
+							    <div class="form-group col-lg-6">
+							      <label for="inputphonenumber">Phone Number</label>
+							      <input type="text" class="form-control form-control-lg" id="inputphonenumber" placeholder="">
+							    </div>
+						  	</div>
+						 	 <div class="form-row row">
+							  <div class="form-group col-md-6">
+							    <label for="inputlastname">Last Name</label>
+							    <input type="text" class="form-control" id="inputlastname" placeholder="">
+							  </div>
+							  <div class="form-group col-md-6">
+							    <label for="inputcellnumber">Cell Number</label>
+							    <input type="text" class="form-control" id="cellnumber" placeholder="">
+							  </div>
+						  	</div>
+						  	<div class="form-row row">
+							    <div class="form-group col-md-6">
+							      <label for="gender">Gender</label>
+							      <select id="gender" class="form-control">
+							        <option selected>Male</option>
+							        <option>Female</option>
+							      </select>
+							    </div>
+							    <div class="form-group col-md-6">
+							      <label for="inputState">Status</label>
+							      <select id="inputState" class="form-control">
+							        <option selected>Active</option>
+							        <option>Disable</option>
+							      </select>
+							    </div>
+						  	</div>
+						  	<div class="form-row row">
+							    <div class="form-group col-md-6">
+							      <label for="inputbirthday">Birthday</label>
+							      <input type="text" class="form-control" id="inputbirthday" placeholder="">
+							    </div>
+							    <div class="form-group col-md-6">
+							    	<label for="inputbirthday"></label>
+							    	<button class="btn btn-primary btn-block">Update</button>
+							    </div>
+						  	</div>
+						</form>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <div class="row">
+				    		<div class="col-sm-9">
+						      <h3 class="mb-0">
+						          Patient Information
+						      </h3>
+						      <p>Patients Medical Information</p>
+						  	</div>
+				    		<div class="col-sm-3">
+							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          Expand
+					        </button>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+				        <form class="person">
+						  <div class="form-row row">
+						    <label for="uli" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-1">Primiary ULI</label>
+						    <div class="col-sm-4">
+						      <input type="text" class="form-control form-control-sm block" id="uli" placeholder="">
+						    </div>
+						  </div>
+						  <div class="form-row row">
+						    <label for="insurer" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-1">Default Insurer</label>
+						    <div class="col-sm-4">
+						      <input type="text" class="form-control form-control-sm" id="insurer" placeholder="">
+						    </div>
+						  </div>
+						  <div class="form-row row">
+						    <label for="family" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-1">Family Physician</label>
+						    <div class="col-sm-4">
+						      <input type="text" class="form-control form-control-sm" id="family" placeholder="">
+						    </div>
+						    <div class="col-sm-4">
+						      <button class="btn btn-primary btn-block">update</button>
+						    </div>
+						  </div>
+						</form>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <div class="row">
+				    		<div class="col-sm-9">
+						      <h3 class="mb-0">
+						          Address
+						      </h3>
+						      <p>Edit Patients Address</p>
+						  	</div>
+				    		<div class="col-sm-3">
+							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Expand
+					        </button>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+					       	<form class="address">
+							  	<div class="form-row row">
+								    <div class="form-group col-lg-6">
+								      <label for="inputadd1">Address Line1</label>
+								      <input type="text" class="form-control form-control-lg" id="inputadd1" placeholder="">
+								    </div>
+								    <div class="form-group col-lg-6">
+								      <label for="inputprovince">Province</label>
+								      <input type="text" class="form-control form-control-lg" id="inputprovince" placeholder="">
+								    </div>
+							  	</div>
+							 	 <div class="form-row row">
+								  <div class="form-group col-md-6">
+								    <label for="inputadd2">Address Line2</label>
+								    <input type="text" class="form-control" id="inputadd2" placeholder="">
+								  </div>
+								  <div class="form-group col-md-6">
+								    <label for="inputcountry">Country</label>
+								    <input type="text" class="form-control" id="inputcountry" placeholder="">
+								  </div>
+							  	</div>
+							  	<div class="form-row row">
+								    <div class="form-group col-md-6">
+								      <label for="inputcity">City</label>
+								      <input type="text" class="form-control" id="inputcity" placeholder="">
+								    </div>
+								    <div class="form-group col-md-6">
+								      <label for="inputcode">Postal Code</label>
+								      <input type="text" class="form-control" id="inputcode" placeholder="">
+								    </div>
+							  	</div>
+							  	<div class="form-row row">
+								    <div class="form-group col-md-6 col-md-offset-6">
+								    	<button class="btn-primary btn btn-block">Update</button>
+								    </div>
+							  	</div>
+							</form>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingFour">
+				      <div class="row">
+				    		<div class="col-sm-9">
+						      <h3 class="mb-0">
+						          Appointment History
+						      </h3>
+						      <p>View Historical Appointment Details</p>
+						  	</div>
+				    		<div class="col-sm-3">
+							   <button class="btn btn-primary collapsed btn-block" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					          Run Report
+					        </button>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+				      <div class="card-body">
+				      <table class="table">
+					    <thead>
+					      <tr>
+					        <th>Patient</th>
+					        <th>Doctor</th>
+					        <th>Clinic</th>
+					        <th>Date</th>
+					        <th>Start Time</th>
+					        <th>End Time</th>
+					        <th>Notes</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td>John Example</td>
+					        <td>Doctor 1</td>
+					        <td>Clinic 1</td>
+					        <td>15-Mar-2018</td>
+					        <td>14:00:00</td>
+					        <td>14:15:36</td>
+					        <td>SOAP Notes</td>
+					      </tr>
+					      <tr>
+					        <td>John Example</td>
+					        <td>Doctor 1</td>
+					        <td>Clinic 1</td>
+					        <td>15-Mar-2018</td>
+					        <td>14:00:00</td>
+					        <td>14:15:36</td>
+					        <td>SOAP Notes</td>
+					      </tr>
+					      <tr>
+					        <td>John Example</td>
+					        <td>Doctor 1</td>
+					        <td>Clinic 1</td>
+					        <td>15-Mar-2018</td>
+					        <td>14:00:00</td>
+					        <td>14:15:36</td>
+					        <td>SOAP Notes</td>
+					      </tr>
+					    </tbody>
+					  </table>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
 		</div>
-	<%= render 'patient/patient_footer' %>
+	</div>
 </div>
