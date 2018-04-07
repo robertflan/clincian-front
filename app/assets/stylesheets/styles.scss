@@ -80,6 +80,11 @@ body{
 #appointment_panel{
 	margin-top: 50px;
 }
+#appointment_panel .panel-body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 #date_picker{
 	margin-top: 50px;
 }
