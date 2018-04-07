@@ -24,7 +24,9 @@
         </a>
         <div class="dropdown-menu">
         	<div class="row">
-        		<div class="col-sm-6 text-center"><span class="glyphicon glyphicon-user"></span><span class="user_name">Patients</span></div>
+        		<div class="col-sm-6 text-center">
+              <%= link_to "<span class='glyphicon glyphicon-user'></span><span class='user_name'>Patients</span>".html_safe, patient_plist_path %> 
+            </div>  
         		<div class="col-sm-6 text-center"><%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%></span class="text-center">Doctors</div>
         	</div>
         	<div class="row">

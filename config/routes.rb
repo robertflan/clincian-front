@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get 'patient/address'
   get 'patient/profile'
   get 'patient/final'
+  get 'patient/plist'
 
   get 'home/index'
   root :to=> 'home#index'
