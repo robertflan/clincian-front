@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'clinic/index'
   get 'clinic/address'
   get 'clinic/final'
+  get 'clinic/cliniclist'
 
   get 'clinician/index'
   get 'clinician/profile'
