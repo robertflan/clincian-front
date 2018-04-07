@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'video/index'
+  get 'video/chat'
+
   get 'clinic/index'
   get 'clinic/address'
   get 'clinic/final'
