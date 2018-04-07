@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'clinician/final'
   get 'clinician/address'
   get 'clinician/info'
+  get 'clinician/clist'
 
   get 'doctor/index'
   get 'doctor/profile'

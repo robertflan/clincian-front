@@ -133,6 +133,19 @@ body{
 #accordion .card-header .btn{
 	margin-top: 30px;
 }
+.reports-modal:hover{
+	cursor: pointer;
+}
+.input_doctor_patient label{
+	margin-left: -15px;
+}
+.modal-body .form-calendar .input-group{
+	margin-left: 55px;
+	max-width: 171px;
+}
+.modal{
+	top: 200px;
+}
 
 @media only screen and ( min-width:600px) and ( max-width:767px ){
 	

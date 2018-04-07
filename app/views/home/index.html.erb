@@ -105,69 +105,95 @@
 		</div>
 	</section>
 </div>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Reports</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body person_info">
-		   <form class="form-inline">
-		   		<h1>Personal info</h1>
-				  	<div class="form-row row">
-					    <div class="form-group col-md-6">
-					      <label for="inputfirstname">First Name</label>
-					      <input type="text" class="form-control" id="iinputfirstname" placeholder="">
-					    </div>
-					    <div class="form-group col-md-6">
-					      <label for="inputphonenumber">Phone Number</label>
-					      <input type="text" class="form-control" id="inputphonenumber" placeholder="">
-					    </div>
-				  	</div>
-				 	 <div class="form-row row">
-					  <div class="form-group col-md-6">
-					    <label for="inputlastname">Last Name</label>
-					    <input type="text" class="form-control" id="inputlastname" placeholder="">
-					  </div>
-					  <div class="form-group col-md-6">
-					    <label for="inputcellnumber">Cell Number</label>
-					    <input type="text" class="form-control" id="cellnumber" placeholder="">
-					  </div>
-				  	</div>
-				  	<div class="form-row row">
-					    <div class="form-group col-md-6">
-					      <label for="gender">Gender</label>
-					      <select id="gender" class="form-control">
-					        <option selected>Male</option>
-					        <option>Female</option>
-					      </select>
-					    </div>
-					    <div class="form-group col-md-6">
-					      <label for="inputState">Status</label>
-					      <select id="inputState" class="form-control">
-					        <option selected>Active</option>
-					        <option>Disable</option>
-					      </select>
-					    </div>
-				  	</div>
-				  	<div class="form-row row">
-					    <div class="form-group col-md-6">
-					      <label for="inputbirthday">Birthday</label>
-					      <input type="text" class="form-control" id="inputbirthday" placeholder="">
-					    </div>
-				  	</div>
-				  	<div class="row">
-					  <button type="button" class="btn btn-primary">cancel</button>
-					  <button type="button" class="btn btn-primary">Next</button>
-				  	</div>
-			</form>
+      <div class="modal-body">
+      		<div class="form-row row">
+			    <div class="form-group col-sm-6 input_doctor_patient">
+				    <label for="inputdoctor" class="col-sm-2 col-form-label">Doctor</label>
+				    <div class="col-sm-9 pull-right">
+				      <input type="text" class="form-control" id="inputdoctor">
+				    </div>
+				</div>
+				<div class="form-group col-sm-6 input_doctor_patient">
+				    <label for="inputpatient" class="col-sm-2 col-form-label">Patient</label>
+				    <div class="col-sm-9 pull-right">
+				      <input type="text" class="form-control" id="inputpatient">
+				    </div>
+				</div>
+		  	</div>
+		  	<!-- date -->
+	  		<div class="form-inline form-group row form-calendar">
+			    <div class="col-sm-6">
+			        <div class="form-group form-inline ">
+			            <label for="inputdate">Date</label>
+			            <div class='input-group date col-sm-9 pull-right' id='datetimepicker8'>
+			                <input type='text' id="inputdate" class="form-control" />
+			                <span class="input-group-addon">
+			                    <span class="glyphicon glyphicon-calendar">
+			                    </span>
+			                </span>
+			            </div>
+			        </div>
+			    </div>
+			    <div class='col-sm-6'>
+			            <div class="form-group form-inline">
+			                <label for="inputtime">Time</label>
+			                <div class='input-group date col-sm-9 pull-right' id='datetimepicker3'>
+			                    <input type='text' id="inputtime" class="form-control" />
+			                    <span class="input-group-addon">
+			                        <span class="glyphicon glyphicon-time"></span>
+			                    </span>
+			                </div>
+			            </div>
+			    </div>
+	  		</div>
+	  		<div class="form-group row ">
+			    <label for="appointement_type" class="col-sm-4 col-form-label">Appointment Type</label>
+			    <div class="col-sm-8 pull-right">
+			     	<select id="appointement_type" class="form-control">
+				        <option selected>Initial Consult</option>
+				        <option>Initial Consult2</option>
+			      	</select>
+			    </div>
+			</div>
+			<div class="form-group row">
+			    <label for="appointement_type" class="col-sm-2 col-form-label">Note</label>
+			    <div class="col-sm-10">
+			     	<textarea class="form-control" rows="3"></textarea>
+			    </div>
+			</div>
+		    <script type="text/javascript">
+		        $(function () {
+		            $('#datetimepicker8').datetimepicker({
+		                icons: {
+		                    time: "fa fa-clock-o",
+		                    date: "fa glyphicon-calendar",
+		                    up: "fa fa-arrow-up",
+		                    down: "fa fa-arrow-down"
+		                }
+		            });
+		        });
+		        $(function () {
+		                $('#datetimepicker3').datetimepicker({
+		                    format: 'LT'
+		                });
+		            });
+		    </script>
+		  	<!-- end date -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
+		<button type="button" class="btn btn-primary pull-right">Enter Waiting Room</button>
       </div>
     </div>
   </div>
