@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="col-sm-8 col-sm-offset-2">
+		<div class="panel panel-default">
+		  	<div class="panel-body person_info">
+		  		<%= image_tag 'man.png',alt:'man', class: 'man-icon'%>
+		  		<div class="block">
+					<%= image_tag 'video-icon.png',class: 'video-icon' %>
+					<%= link_to 'End Call', root_path %>
+		  		</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	.panel{
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 400px;
+	}
+	.man-icon{
+		width: 300px;
+	}
+	.video-icon{
+		width: 50px;
+	}
+	.block{
+		align-items: center;
+	    position: relative;
+	    bottom: -70px;
+	    text-align: center;
+	}
+	
+</style>
