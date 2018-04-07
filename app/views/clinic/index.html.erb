@@ -1,3 +1,51 @@
 <%= render 'patient/patient_header' %>
-<%= render 'patient/person_info' %>
+	<form class="f">
+	  <h1>Personal info</h1>
+	    <div class="form-row row">
+	      <div class="form-group col-lg-6">
+	        <label for="inputfirstname">First Name</label>
+	        <input type="text" class="form-control form-control-lg" id="iinputfirstname" placeholder="">
+	      </div>
+	      <div class="form-group col-lg-6">
+	        <label for="inputphonenumber">Phone Number</label>
+	        <input type="text" class="form-control form-control-lg" id="inputphonenumber" placeholder="">
+	      </div>
+	    </div>
+	   <div class="form-row row">
+	    <div class="form-group col-md-6">
+	      <label for="inputlastname">Last Name</label>
+	      <input type="text" class="form-control" id="inputlastname" placeholder="">
+	    </div>
+	    <div class="form-group col-md-6">
+	      <label for="inputcellnumber">Cell Number</label>
+	      <input type="text" class="form-control" id="cellnumber" placeholder="">
+	    </div>
+	    </div>
+	    <div class="form-row row">
+	      <div class="form-group col-md-6">
+	        <label for="gender">Gender</label>
+	        <select id="gender" class="form-control">
+	          <option selected>Male</option>
+	          <option>Female</option>
+	        </select>
+	      </div>
+	      <div class="form-group col-md-6">
+	        <label for="inputState">Status</label>
+	        <select id="inputState" class="form-control">
+	          <option selected>Active</option>
+	          <option>Disable</option>
+	        </select>
+	      </div>
+	    </div>
+	    <div class="form-row row">
+	      <div class="form-group col-md-6">
+	        <label for="inputbirthday">Birthday</label>
+	        <input type="text" class="form-control" id="inputbirthday" placeholder="">
+	      </div>
+	    </div>
+	</form>
+	<div class="row text-center">
+	    <button type="button" class="btn btn-primary btn-lg">cancel</button>
+	    <%= link_to 'Next', clinic_address_path, class: "btn btn-primary btn-lg next-btn" %>
+	  </div>
 <%= render 'patient/patient_footer' %>

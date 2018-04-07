@@ -1,0 +1,39 @@
+<%= render 'patient/patient_header' %>
+<h1>Address</h1>
+<form class="address">
+  	<div class="form-row row">
+	    <div class="form-group col-lg-6">
+	      <label for="inputadd1">Address Line1</label>
+	      <input type="text" class="form-control form-control-lg" id="inputadd1" placeholder="">
+	    </div>
+	    <div class="form-group col-lg-6">
+	      <label for="inputprovince">Province</label>
+	      <input type="text" class="form-control form-control-lg" id="inputprovince" placeholder="">
+	    </div>
+  	</div>
+ 	 <div class="form-row row">
+	  <div class="form-group col-md-6">
+	    <label for="inputadd2">Address Line2</label>
+	    <input type="text" class="form-control" id="inputadd2" placeholder="">
+	  </div>
+	  <div class="form-group col-md-6">
+	    <label for="inputcountry">Country</label>
+	    <input type="text" class="form-control" id="inputcountry" placeholder="">
+	  </div>
+  	</div>
+  	<div class="form-row row">
+	    <div class="form-group col-md-6">
+	      <label for="inputcity">City</label>
+	      <input type="text" class="form-control" id="inputcity" placeholder="">
+	    </div>
+	    <div class="form-group col-md-6">
+	      <label for="inputcode">Postal Code</label>
+	      <input type="text" class="form-control" id="inputcode" placeholder="">
+	    </div>
+  	</div>
+</form>
+	<div class="row text-center">
+	  <button type="button" class="btn btn-primary btn-lg">cancel</button>
+	  <%= link_to 'Next', clinic_final_path, class: "btn btn-primary btn-lg next-btn"%>
+	</div>
+<%= render 'patient/patient_footer' %>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'clinic/index'
+  get 'clinic/address'
+  get 'clinic/final'
 
   get 'clinician/index'
   get 'clinician/profile'
@@ -13,6 +15,7 @@ Rails.application.routes.draw do
   get 'doctor/license'
   get 'doctor/final'
   get 'doctor/address'
+  get 'doctor/dlist'
 
   get 'patient/index'
   get 'patient/personinfo'
