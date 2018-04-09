@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'waiting_room/index'
+  get 'waiting_room/video'
+
   get 'video/index'
   get 'video/chat'
 

@@ -154,7 +154,53 @@ body{
 .dropdown-menu a span{
 	color: #000;
 }
-
+.nav .user_login{
+	margin-top: 20px;
+	position: relative;
+	top: 5px;
+}
+#waiting_room_dashboard{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+.waiting_room_header .panel-body{
+	min-height: 200px;
+    padding-top: 50px !important;
+}
+.camera-icon{
+	width: 24px;
+    height: 14px;
+    margin-right: 3px;
+    margin-top: -5px;
+    opacity: 0.7;
+}
+.waiting_video_room{
+	.video_status{
+		display: flex;
+	  	align-items: center;
+	  	justify-content: center;
+	  	min-height: 600px;
+	  	background: #fff;
+	}
+	.block{
+		width: 100%;
+		min-height: 150px;
+		background: #fff;
+		display: flex;
+	  	align-items: center;
+	  	justify-content: center;
+	  	border: 2px solid #7777;
+	  	border-bottom: none;
+	}
+	.block:last-child{
+	  	border-bottom: 2px solid #7777;
+	}
+	.stop_video{
+		max-width: 100px;
+	}
+}
 @media only screen and ( min-width:600px) and ( max-width:767px ){
 	
 }
