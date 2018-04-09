@@ -5,7 +5,7 @@
 		</div>
 		<div class="col-sm-3">
 			<div class="block">
-				SOAP Notes
+				<a data-toggle="modal" href="#soap_notes" class="btn">Soap Notes</a>
 			</div>
 			<div class="block">
 				<%= image_tag 'video-icon.png', class:'stop_video'%>
@@ -14,8 +14,37 @@
 				screenshot
 			</div>
 			<div class="block">
-				<span>End Call</span>
+				<%= link_to "<span>End Call</span>".html_safe, waiting_room_index_path %>
 			</div>
 		</div>
 	</div>
 </div>
+  <!-- Modal -->
+  <div class="modal fade" id="soap_notes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body soap_sign">
+        	<div class="row">
+	         	<div class="col-sm-12">
+					<div class="block">
+						<span>Subjective</span>
+					</div>
+					<div class="block">
+						<span>Objective</span>
+					</div>
+					<div class="block">
+						<span>Assessment</span>
+					</div>
+					<div class="block">
+						<span>Plan</span>
+					</div>
+				</div>
+        	</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Save for later</button>
+          <button type="button" class="btn btn-primary">Sign</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
