@@ -211,6 +211,22 @@ body{
   	border: 2px solid #7777;
   	border-bottom: none;
 }
+.soap_sign .block:last-child{
+	  	border-bottom: 2px solid #7777;
+}
+.datepicker-days table tr{
+	border-top: 1px solid #777;
+	border-right: 1px solid #777;
+	border-left: 1px solid #777;
+
+}
+.datepicker-days table tr:last-child{
+	border-bottom: 1px solid #777;
+	
+}
+.datepicker-days table tr td{
+	border-right: 1px solid #777;
+}
 @media only screen and ( min-width:600px) and ( max-width:767px ){
 	
 }
