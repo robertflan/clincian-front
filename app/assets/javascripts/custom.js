@@ -16,6 +16,7 @@ $( document ).on('turbolinks:load',function() {
 	$('.report_btn').click(function(){
 		$(this).hide();
 		$('.person_card_info').hide();
+
 	});
 	$('.report_close').click(function(){
 		$('.report_btn').show();
@@ -24,4 +25,7 @@ $( document ).on('turbolinks:load',function() {
 		  toggle: true
 		});
 	})
+	$('.c_report').click(function(){
+		
+	});
 })

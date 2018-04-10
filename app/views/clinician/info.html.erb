@@ -1,16 +1,18 @@
 <% provide(:title, "Clinician info") %>
 <%= render 'patient/patient_header' %>
 <h1>Clinician Information</h1>
-<form class="person">
-  <div class="form-row row">
-    <label for="practice_id" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Practice ID</label>
-    <div class="col-sm-6">
-      <input type="text" class="form-control form-control-sm block" id="practice_id" placeholder="">
-    </div>
-  </div>
-</form>
+<div class="main_panel_part">
+    <form class="person">
+      <div class="form-row row">
+        <label for="practice_id" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Practice ID</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control form-control-sm block" id="practice_id" placeholder="">
+        </div>
+      </div>
+    </form>
+</div>
 	<div class="row text-center">
-	  <button type="button" class="btn btn-primary btn-lg">cancel</button>
+	  <%= link_to 'Cancel', root_path, class:"btn btn-primary next-btn btn-lg" %>
 	  <%= link_to 'Next', clinician_address_path, class: "btn btn-primary btn-lg next-btn" %>
 	</div>
 <%= render 'patient/patient_footer' %>

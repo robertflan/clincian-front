@@ -1,12 +1,14 @@
 <%= render 'patient/patient_header' %>
 <h1>Profile</h1>
-<div class="text-center">
-	<div class="profile_pic">
-		<span class="glyphicon glyphicon-user"></span>
-	</div>	
+<div class="main_panel_part">
+	<div class="text-center">
+		<div class="profile_pic">
+			<span class="glyphicon glyphicon-user"></span>
+		</div>	
+	</div>
 </div>
 	<div class="row text-center">
-	  <button type="button" class="btn btn-primary btn-lg">cancel</button>
+	  <%= link_to 'Cancel', root_path, class:"btn btn-primary next-btn btn-lg" %>
 	  <%= link_to 'Next', doctor_final_path, class: "btn btn-primary btn-lg next-btn" %>
 	</div>
 <%= render 'patient/patient_footer' %>

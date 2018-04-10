@@ -1,42 +1,44 @@
 <%= render 'patient/patient_header' %>
 <h1>License info</h1>
-<form class="person">
-  <div class="form-row row">
-    <label for="practice_id" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Practice ID</label>
-    <div class="col-sm-6">
-      <input type="text" class="form-control form-control-sm block" id="practice_id" placeholder="">
+<div class="main_panel_part">
+  <form class="person">
+    <div class="form-row row">
+      <label for="practice_id" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Practice ID</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control form-control-sm block" id="practice_id" placeholder="">
+      </div>
     </div>
-  </div>
-  <div class="form-row row">
-    <label for="provider_status" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Provider Status</label>
-    <div class="col-sm-6">
-      <select id="inputState" class="form-control">
-            <option selected>Full Register</option>
-            <option>Disable</option>
-      </select>
+    <div class="form-row row">
+      <label for="provider_status" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Provider Status</label>
+      <div class="col-sm-6">
+        <select id="inputState" class="form-control">
+              <option selected>Full Register</option>
+              <option>Disable</option>
+        </select>
+      </div>
     </div>
-  </div>
-  <div class="form-row row">
-    <label for="specialty" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Specialty Code</label>
-    <div class="col-sm-6">
-      <select id="inputState" class="form-control">
-            <option selected>General Practice</option>
-            <option>Disable</option>
-      </select>
+    <div class="form-row row">
+      <label for="specialty" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Specialty Code</label>
+      <div class="col-sm-6">
+        <select id="inputState" class="form-control">
+              <option selected>General Practice</option>
+              <option>Disable</option>
+        </select>
+      </div>
     </div>
-  </div>
-  <div class="form-row row">
-    <label for="provider" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Provider Type</label>
-    <div class="col-sm-6">
-      <select id="inputState" class="form-control">
-            <option selected>Physician</option>
-            <option>Disable</option>
-      </select>
+    <div class="form-row row">
+      <label for="provider" class="col-sm-2 col-form-label col-form-label-sm col-sm-offset-2">Provider Type</label>
+      <div class="col-sm-6">
+        <select id="inputState" class="form-control">
+              <option selected>Physician</option>
+              <option>Disable</option>
+        </select>
+      </div>
     </div>
-  </div>
-</form>
+  </form>
+</div>
 	<div class="row text-center">
-	  <button type="button" class="btn btn-primary btn-lg">cancel</button>
+	  <%= link_to 'Cancel', root_path, class:"btn btn-primary next-btn btn-lg" %>
 	  <%= link_to 'Next', doctor_address_path, class: "btn btn-primary btn-lg next-btn" %>
 	</div>
 <%= render 'patient/patient_footer' %>

@@ -46,7 +46,7 @@
 	    </div>
 	</form>
 	<div class="row text-center">
-	    <button type="button" class="btn btn-primary btn-lg">cancel</button>
+	    <%= link_to 'Cancel', root_path, class:"btn btn-primary next-btn btn-lg" %>
 	    <%= link_to 'Next', clinician_info_path, class: "btn btn-primary btn-lg next-btn" %>
 	  </div>
 <%= render 'patient/patient_footer' %>
