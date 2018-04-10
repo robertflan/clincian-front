@@ -92,7 +92,7 @@ body{
 	padding: 10px;
 }
 .panel-body{
-	padding: 15px 30px !important;
+	padding: 15px 30px;
 }
 .person_info .form-row{
 	padding: 10px 0px 0px 0px;
@@ -165,6 +165,9 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 300px;
+    table tr td,th{
+    	vertical-align: middle;
+    }
 }
 .waiting_room_header .panel-body{
 	min-height: 200px;
@@ -289,7 +292,25 @@ body{
 .drop_item_text{
 	margin-top: 10px;
 }
-
+.input_doctor_patient #inputpatient{
+	position: relative;
+	right: -15px;
+}
+.modal_time_picker{
+	position: relative;
+	right: -10px;
+}
+.waiting_room_person_name {
+	text-align: center;
+}
+.waiting_room_person_name span{
+	display: block;
+	text-align: center;
+}
+.waiting_room_person_name img{
+	margin-top: 0px auto;
+	text-align: center;
+}
 @media only screen and ( min-width:600px) and ( max-width:767px ){
 	
 }
@@ -312,7 +333,13 @@ body{
  		padding-left: 20px;
  	}
  	#appointment_panel {
-    margin-top: 10px;
-}
+	    margin-top: 10px;
+	}
+	#waiting_room_dashboard #exTab1{
+		width: 100%;
+	}
+	.panel-body{
+		padding: 5px !important;
+	}
 	
 }

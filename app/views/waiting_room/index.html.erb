@@ -48,41 +48,41 @@
 				          	 <table class="table">
 							    <thead>
 							      <tr>
-							        <th><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">Name</span></th>
+							        <th class="waiting_room_person_name"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">Name</span></th>
 							        <th>Gender</th>
 							        <th>Age</th>
 							        <th>Appointment Type</th>
 							        <th>Time in Waiting Room</th>
-							        <th>
+							        <th class="waiting_room_person_name">
 							        	<%= image_tag 'glyphicons-181-facetime-video.png',class:'camera-icon glyphicon g' %><span>Start Visit</span></th>
 							      </tr>
 							    </thead>
 							    <tbody>
 							      <tr>
-							        <td><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">Jone Doe</span></td>
+							        <td class="waiting_room_person_name"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">Jone Doe</span></td>
 							        <td>FeMale</td>
 							        <td>27</td>
 							        <td>Addiction</td>
 							        <td>1:34</td>
-							        <td><%= link_to image_tag('glyphicons-181-facetime-video.png'), waiting_room_video_path, class: 'camera-icon glyphicon' %>
+							        <td class="waiting_room_person_name"><%= link_to image_tag('glyphicons-181-facetime-video.png'), waiting_room_video_path, class: 'camera-icon glyphicon' %>
 							        	<span>Start Visit</span></td>
 							      </tr>
 							      <tr>
-							        <td><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">James</span></td>
+							        <td class="waiting_room_person_name"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">James</span></td>
 							        <td>Male</td>
 							        <td>27</td>
 							        <td>Addiction</td>
 							        <td>3:34</td>
-							        <td><%= link_to image_tag('glyphicons-181-facetime-video.png'), waiting_room_video_path, class: 'camera-icon glyphicon' %>
+							        <td class="waiting_room_person_name"><%= link_to image_tag('glyphicons-181-facetime-video.png'), waiting_room_video_path, class: 'camera-icon glyphicon' %>
 							        	<span>Start Visit</span></td>
 							      </tr>
 							      <tr>
-							        <td><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">Doe</span></td>
+							        <td class="waiting_room_person_name"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">Doe</span></td>
 							        <td>FeMale</td>
 							        <td>27</td>
 							        <td>Addiction</td>
 							        <td>1:34</td>
-							        <td>
+							        <td class="waiting_room_person_name">
 							        <%= link_to image_tag('glyphicons-181-facetime-video.png'), waiting_room_video_path, class: 'camera-icon glyphicon' %>
 							        	<span>Start Visit</span></td>
 							      </tr>
@@ -101,44 +101,46 @@
 					            </div>
 							</div>
 						</div>
-			          	<table class="table">
-						    <thead>
-						      <tr>
-						        <th><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">Name</span></th>
-						        <th>Type</th>
-						        <th>Date</th>
-						        <th>Start Time</th>
-						        <th>End Time</th>
-						        <th>SOAP Notes</th>
-						      </tr>
-						    </thead>
-						    <tbody>
-						      <tr>
-						        <td>Jane Doe</td>
-						        <td>Addiction</td>
-						        <td>7-Mar-2018</td>
-						        <td>14:30:15</td>
-						        <td>14:44:10</td>
-						        <td>SOAP</td>
-						      </tr>
-						      <tr>
-						      	<td>Jane Doe</td>
-						        <td>Addiction</td>
-						        <td>7-Mar-2018</td>
-						        <td>14:30:15</td>
-						        <td>14:44:10</td>
-						        <td>SOAP</td>
-						      </tr>
-						      <tr>
-						        <td>Jane Doe</td>
-						        <td>Addiction</td>
-						        <td>7-Mar-2018</td>
-						        <td>14:30:15</td>
-						        <td>14:44:10</td>
-						        <td>SOAP</td>
-						      </tr>
-						    </tbody>
-						 </table>
+						<div class="table-responsive">
+				          	<table class="table">
+							    <thead>
+							      <tr>
+							        <th><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">Name</span></th>
+							        <th>Type</th>
+							        <th>Date</th>
+							        <th>Start Time</th>
+							        <th>End Time</th>
+							        <th>SOAP Notes</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td>Jane Doe</td>
+							        <td>Addiction</td>
+							        <td>7-Mar-2018</td>
+							        <td>14:30:15</td>
+							        <td>14:44:10</td>
+							        <td>SOAP</td>
+							      </tr>
+							      <tr>
+							      	<td>Jane Doe</td>
+							        <td>Addiction</td>
+							        <td>7-Mar-2018</td>
+							        <td>14:30:15</td>
+							        <td>14:44:10</td>
+							        <td>SOAP</td>
+							      </tr>
+							      <tr>
+							        <td>Jane Doe</td>
+							        <td>Addiction</td>
+							        <td>7-Mar-2018</td>
+							        <td>14:30:15</td>
+							        <td>14:44:10</td>
+							        <td>SOAP</td>
+							      </tr>
+							    </tbody>
+							 </table>
+						</div>
 					</div>
 			        <div class="tab-pane" id="3a">
 			          	<div class="col-sm-12">
