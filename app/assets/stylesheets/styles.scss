@@ -127,7 +127,8 @@ body{
 	min-height: 150px;
 }
 #accordion .person_card_info{
-	border-bottom: 1px solid #7777; 
+	border-bottom: 1px solid #7777;
+	padding-bottom: 20px; 
 }
 #total_body{
 	padding: 20px 0px !important;
@@ -230,13 +231,15 @@ body{
 .clin_dropdown_menu{
 	top: 62px;
     padding: 9px 5px 5px 5px;
-    min-width: 170px;
+    min-width: 200px;
 }
 .clin_dropdown_menu span{
 	display: block;
 }
 .clin_dropdown_menu tr td{
-	padding: 19px 8px !important;
+	padding: 19px 18px !important;
+    width: 97px;
+    height: 93px;
 }
 .clin_dropdown_menu table{
 	margin-bottom: 5px;
@@ -272,6 +275,20 @@ body{
 		margin-top: 100px;
 	}
 }
+.main_menu_home{
+	background: #0c77b7!important;
+	span.glyphicon-th{
+		font-size: 30px !important;
+		position: relative;
+		top: 5px;
+	}
+}
+.navbar-default .navbar-nav>.open>a:hover{
+	background: #0c77b7;
+}
+.drop_item_text{
+	margin-top: 10px;
+}
 
 @media only screen and ( min-width:600px) and ( max-width:767px ){
 	
@@ -291,11 +308,11 @@ body{
 	.navbar-brand{
     margin-left: 0px;
 	}
-	.dropdown-menu .text-center{
-		text-align: left;
-	}
  	header .navbar-nav{
  		padding-left: 20px;
  	}
+ 	#appointment_panel {
+    margin-top: 10px;
+}
 	
 }

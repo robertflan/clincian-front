@@ -15,45 +15,42 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        	<button type="button" class="custom-toggle " style="display: block;">
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			</button>
+        <a href="#" class="dropdown-toggle main_menu_home" data-toggle="dropdown">
+        	<span class="glyphicon glyphicon-th"></span>
         </a>
         <div class="dropdown-menu clin_dropdown_menu">
           <table class="table table-bordered">
             <tbody>
               <tr>
                 <td>
-                  <%= link_to "<span class='glyphicon glyphicon-user text-center'></span><span class='user_name text-center'>Patients</span>".html_safe, patient_plist_path, class: 'text-center' %> 
+                  <%= link_to "<span class='glyphicon glyphicon-user text-center'></span><span class='user_name text-center drop_item_text'>Patients</span>".html_safe, patient_plist_path, class: 'text-center' %> 
                 </td>
                 <td>
-                   <%= link_to "<span class='glyphicon glyphicon-home'></span><span class='user_name text-center'>Home</span>".html_safe, root_path, class: 'text-center' %> 
+                   <%= link_to "<span class='glyphicon glyphicon-home'></span><span class='user_name text-center drop_item_text'>Home</span>".html_safe, root_path, class: 'text-center' %> 
                 </td>
               </tr>
               <tr>
                 <td>
                   <a href="/doctor/dlist">
-                    <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center doctor_item">Doctors</span></div>
+                    <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center doctor_item drop_item_text">Doctors</span></div>
                   </a>
                 </td>
                 <td>
                   <a href="/clinic/cliniclist">
-                  <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center">Clinics</span>
+                  <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center drop_item_text">Clinics</span>
                   </a>
                 </td>
               </tr>
               <tr>
                 <td>
                   <a href="/clinician/clist">
-                  <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center">Clincians</span>
+                  <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center drop_item_text">Clincians</span>
                   </a>
                 </td>
                 <td class="last_menu_icon">
-                  <span class="glyphicon glyphicon-list-alt text-center" data-toggle="modal" data-target="#exampleModalCenter"></span>
-                  <span class="text-center" data-toggle="modal" data-target="#exampleModalCenter">Reports</span>
+                    <span class="glyphicon glyphicon-list-alt text-center" data-toggle="modal" data-target="#exampleModalCenter"></span>
+                    <span class="text-center drop_item_text" data-toggle="modal" data-target="#exampleModalCenter">Reports</span>
+                  </a>
                 </td>
               </tr>
             </tbody>

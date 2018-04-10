@@ -1,15 +1,16 @@
 <% provide(:title, "Patient list") %>
 <div class="container">
-	<div class="col-sm-8 col-sm-offset-2 row">
+	<div class="col-sm-8 col-sm-offset-2 row" style="margin-top: 60px;">
 		<div class="col-sm-6">
 			<h2>Patients</h2>
 		</div>
 		<div class="col-sm-3 float-right pull-right">
-			<%= link_to 'Add patient', patient_index_path, class: 'btn btn-primary btn-lg btn-block' %>
+			<%= link_to 'Add Patient', patient_index_path, class: 'btn btn-primary btn-lg btn-block' %>
 		</div>
 	</div>
 </div>
 <%= render 'patient/patient_header' %>
+<div class="table-responsive">
 	<table class="table">
 	    <thead>
 	      <tr>
@@ -72,5 +73,6 @@
 	      </tr>
 	    </tbody>
 	  </table>
+</div>
 <%= render 'patient/patient_footer' %>
 		  
