@@ -23,26 +23,41 @@
 			</button>
         </a>
         <div class="dropdown-menu clin_dropdown_menu">
-        	<div class="row">
-        		<div class="col-sm-6 text-center">
-              <%= link_to "<span class='glyphicon glyphicon-user'></span><span class='user_name'>Patients</span>".html_safe, patient_plist_path %> 
-            </div>  
-        		<div class="col-sm-6 text-center">
-              <a href="/doctor/dlist">
-                <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center doctor_item">Doctors</span></div>
-              </a>
-        	</div>
-        	<div class="row">
-            <a href="/clinic/cliniclist">
-              <div class="col-sm-6 text-center"><span class="glyphicon glyphicon-user"></span><span class="text-center">Clinics</span></div>
-            </a>
-            <a href="/clinician/clist">
-        		  <div class="col-sm-6 text-center"><span class="glyphicon glyphicon-user"></span><span class="text-center">Clincians</span></div>
-            </a>
-        	</div>
-        	<div class="row">
-        		<div class="col-sm-6 text-center reports-modal" ><span class="glyphicon glyphicon-user" data-toggle="modal" data-target="#exampleModalCenter"></span><span class="text-center" data-toggle="modal" data-target="#exampleModalCenter">Reports</span></div>
-        	</div>
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td>
+                  <%= link_to "<span class='glyphicon glyphicon-user text-center'></span><span class='user_name text-center'>Patients</span>".html_safe, patient_plist_path, class: 'text-center' %> 
+                </td>
+                <td>
+                   <%= link_to "<span class='glyphicon glyphicon-home'></span><span class='user_name text-center'>Home</span>".html_safe, root_path, class: 'text-center' %> 
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/doctor/dlist">
+                    <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center doctor_item">Doctors</span></div>
+                  </a>
+                </td>
+                <td>
+                  <a href="/clinic/cliniclist">
+                  <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center">Clinics</span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/clinician/clist">
+                  <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center">Clincians</span>
+                  </a>
+                </td>
+                <td class="last_menu_icon">
+                  <span class="glyphicon glyphicon-list-alt text-center" data-toggle="modal" data-target="#exampleModalCenter"></span>
+                  <span class="text-center" data-toggle="modal" data-target="#exampleModalCenter">Reports</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </li>
     </ul>
@@ -65,7 +80,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Reports</h5>
+        <h3 class="modal-title" id="exampleModalLongTitle">Reports</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

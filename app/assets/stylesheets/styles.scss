@@ -21,8 +21,8 @@ body{
     display: block;
 }
 .doctor-icon{
-	width: 22px;
-	height: 24px;
+	width: 20px;
+	height: 20px;
 	margin: 0px auto;
 }
 .icon-addon.addon-lg .form-control {
@@ -126,7 +126,7 @@ body{
 .final_dashboard .panel-body{
 	min-height: 150px;
 }
-#accordion .card{
+#accordion .person_card_info{
 	border-bottom: 1px solid #7777; 
 }
 #total_body{
@@ -229,13 +229,50 @@ body{
 }
 .clin_dropdown_menu{
 	top: 62px;
-    padding: 40px 20px;
-    min-width: 190px;
+    padding: 9px 5px 5px 5px;
+    min-width: 170px;
 }
-.doctor_item{
-	position: relative;
-	top: 2px
+.clin_dropdown_menu span{
+	display: block;
 }
+.clin_dropdown_menu tr td{
+	padding: 19px 8px !important;
+}
+.clin_dropdown_menu table{
+	margin-bottom: 5px;
+}
+.clin_dropdown_menu tr td a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+.last_menu_icon:hover{
+	cursor: pointer;
+}
+#accordion .btn-default{
+	border-color: #0c77b7 !important;
+}
+#accordion .btn-default:hover{
+	background: #0c77b7 !important;
+	 -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.pagenation_button{
+	margin-bottom: 40px;
+}
+.main_panel_part{
+	min-height: 260px;
+	text-align: center;
+	vertical-align: center;
+	.profile_pic{
+		margin-top: 120px;
+	}
+	.person{
+		margin-top: 100px;
+	}
+}
+
 @media only screen and ( min-width:600px) and ( max-width:767px ){
 	
 }
