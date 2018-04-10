@@ -22,14 +22,14 @@
 			      <span class="icon-bar"></span>
 			</button>
         </a>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu clin_dropdown_menu">
         	<div class="row">
         		<div class="col-sm-6 text-center">
               <%= link_to "<span class='glyphicon glyphicon-user'></span><span class='user_name'>Patients</span>".html_safe, patient_plist_path %> 
             </div>  
         		<div class="col-sm-6 text-center">
               <a href="/doctor/dlist">
-                <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%></span class="text-center">Doctors</div>
+                <%=image_tag 'doctor-icon.png', class: 'img-responsive doctor-icon'%><span class="text-center doctor_item">Doctors</span></div>
               </a>
         	</div>
         	<div class="row">

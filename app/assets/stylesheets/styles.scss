@@ -21,8 +21,8 @@ body{
     display: block;
 }
 .doctor-icon{
-	width: 20px;
-	height: 23px;
+	width: 22px;
+	height: 24px;
 	margin: 0px auto;
 }
 .icon-addon.addon-lg .form-control {
@@ -226,6 +226,15 @@ body{
 }
 .datepicker-days table tr td{
 	border-right: 1px solid #777;
+}
+.clin_dropdown_menu{
+	top: 62px;
+    padding: 40px 20px;
+    min-width: 190px;
+}
+.doctor_item{
+	position: relative;
+	top: 2px
 }
 @media only screen and ( min-width:600px) and ( max-width:767px ){
 	
